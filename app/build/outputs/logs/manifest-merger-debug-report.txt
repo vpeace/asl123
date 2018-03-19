@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.karumi:dexter:4.1.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/dexter-4.1.0.aar/2b74b217bbfb17b82bba847d03edeb34/AndroidManifest.xml:17:1-33:12
 MERGED from [com.android.support:design:25.2.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/a71a01176dbf73b7704d6b8dc20cdc56/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/8985643b16473d0daebe8a974b1c8732/AndroidManifest.xml:17:1-31:12
@@ -23,20 +23,20 @@ MERGED from [com.facebook.fresco:drawee:1.4.0] /Users/Amandeep/.gradle/caches/tr
 MERGED from [com.facebook.fresco:imagepipeline:1.4.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.4.0.aar/cc07f75dd5cdec8bd56fb5db593b88a9/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:1.4.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.4.0.aar/0fb633924ddd31c8d8227df1a509d196/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.4.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/fbcore-1.4.0.aar/0d9db50d3a25a7ee75c44b3b4ad5cad7/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:2:11-69
@@ -57,7 +57,7 @@ ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:7:1-92
 	android:name
 		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:7:18-73
 application
-ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:8:5-22:19
+ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:8:5-23:19
 MERGED from [com.karumi:dexter:4.1.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/dexter-4.1.0.aar/2b74b217bbfb17b82bba847d03edeb34/AndroidManifest.xml:26:5-31:19
 MERGED from [com.karumi:dexter:4.1.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/dexter-4.1.0.aar/2b74b217bbfb17b82bba847d03edeb34/AndroidManifest.xml:26:5-31:19
 MERGED from [com.android.support:design:25.2.0] /Users/Amandeep/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/a71a01176dbf73b7704d6b8dc20cdc56/AndroidManifest.xml:25:5-20
@@ -97,19 +97,21 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Amandeep/.
 	android:theme
 		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.example.amandeep.asl.MainActivity
-ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:15:9-21:20
+ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:15:9-22:20
+	android:configChanges
+		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:16:13-74
 	android:name
 		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:15:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Amandeep/Downloads/Asl/app/src/main/AndroidManifest.xml

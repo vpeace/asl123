@@ -8,16 +8,15 @@
         tools:context="com.example.amandeep.asl.MainActivity"
         >
 
-    <ImageButton
+    <Button
         android:id="@+id/btnRetry"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/oval_ripple"
+        android:text="CamerA"
         android:elevation="6dp"
-        android:src="@drawable/ironman"
-        android:stateListAnimator="@anim/fab_raise" />
+        />
 
 
     <TextView
@@ -36,6 +35,7 @@
         android:layout_width="@dimen/photo_width"
         android:layout_height="@dimen/photo_height"
         android:layout_marginBottom="8dp"
+        android:visibility="gone"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="24dp"

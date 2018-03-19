@@ -1,4 +1,4 @@
-#Fri Mar 16 23:16:09 IST 2018
-base.0=/Users/Amandeep/Downloads/Asl/app/build/intermediates/transforms/dexMerger/debug/1
+#Mon Mar 19 21:51:32 IST 2018
+base.0=/Users/Amandeep/Downloads/Asl/app/build/intermediates/transforms/dexMerger/debug/58
 path.0=classes.dex
 renamed.0=classes.dex

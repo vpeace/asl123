@@ -18,6 +18,7 @@ import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.mohammed_2284.simpleapp.retrofit.APIKindaStuff
@@ -60,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ib = findViewById(R.id.btnRetry) as ImageButton
+        val ib = findViewById(R.id.btnRetry) as Button
         ib.setOnClickListener {
 
                /* val cameraFolder: File
@@ -99,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
      //   finish()
         //`super.onActivityResult(requestCode, resultCode, data)
         Toast.makeText(applicationContext, resultCode.toString() + "hi", Toast.LENGTH_SHORT).show()
