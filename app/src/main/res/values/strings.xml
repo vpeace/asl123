@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ASL FingerSpelling Interpreter</string>
+    <string name="Photo">photo</string>
+    <string name="clify1">A</string>
+    <string name="clify2">Z</string>
+    <string name="c1">SVM</string>
+    <string name="c2">MLP</string>
 </resources>

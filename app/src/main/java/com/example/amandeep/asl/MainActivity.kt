@@ -18,9 +18,7 @@ import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.Toast
+import android.widget.*
 import com.example.mohammed_2284.simpleapp.retrofit.APIKindaStuff
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.view.SimpleDraweeView
@@ -64,37 +62,6 @@ class MainActivity : AppCompatActivity() {
         val ib = findViewById(R.id.btnRetry) as Button
         ib.setOnClickListener {
 
-               /* val cameraFolder: File
-                if (android.os.Environment.getExternalStorageState() == android.os.Environment.MEDIA_MOUNTED) {
-                    cameraFolder = File(Environment.getExternalStorageDirectory(), "DCIM/")
-                } else {
-                    cameraFolder = cacheDir
-                }
-                //if the folder does not exist create it
-                if (!cameraFolder.exists()) {
-                    cameraFolder.mkdirs()
-                }
-
-
-                val photo = File(Environment.getExternalStorageDirectory(),
-                        cameraFolder.toString() + imageName)
-
-                imgPath = Uri.fromFile(photo).toString() + ""
-                val values = ContentValues(1)
-                values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpg")
-                val fileUri = contentResolver
-                        .insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-                                values)
-                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                if (intent.resolveActivity(packageManager) != null) {
-                    mCurrentPhotoPath = fileUri.toString()
-                    intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri)
-                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION
-                            or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
-                    startActivityForResult(intent, TAKE_PHOTO_REQUEST)
-
-                }
-            */
             validatePermissions();
         }
 
@@ -107,71 +74,13 @@ class MainActivity : AppCompatActivity() {
       //  processCapturedPhoto()
 
         if (resultCode == Activity.RESULT_OK) {
-          /*  var uri: Uri? = null
-            //imgPath =FileProvider.getUriForFile(getApplicationContext(), getApplicationContext().getPackageName() + ".provider", data) + "";
-            //display the progress bar
-            uri = Uri.parse(mCurrentPhotoPath)
-            val inputStream = FileInputStream(mCurrentPhotoPath)//You can get an inputStream using any IO API
-            val bytes: ByteArray
-            val buffer = ByteArray(8192)
-            var bytesRead: Int
-            val output = ByteArrayOutputStream()
-            try {
-                while (inputStream.read(buffer) != -1) {
-                    output.write(buffer, 0, inputStream.read(buffer))
-                }
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
-
-            bytes = output.toByteArray()
-            val encodedString = Base64.getEncoder().encodeToString(bytes)
-            val jsonObj = JsonObject()
-            jsonObj.addProperty("title", "rhythm")
-            jsonObj.addProperty("singer", "meee")
-            jsonObj.addProperty("text", encodedString)
-            //  POST demo
-            APIKindaStuff
-                    .service
-                    .getVectors(jsonObj)
-                    .enqueue(object : Callback<ResponseBody> {
-                        override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                            println("---TTTT :: POST Throwable EXCEPTION:: " + t.message)
-                        }
-
-                        override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                            if (response.isSuccessful) {
-                                val msg = response.body()?.string()
-                                println("---TTTT :: POST msg from server :: " + msg)
-                                Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
-                            }
-                        }
-                    })
-*/
-            processCapturedPhoto()
+          processCapturedPhoto()
         } else {
             super.onActivityResult(requestCode, resultCode, data)
         //    finish()
         }
 
     }
-
-    private fun launchCamera() {
-        val values = ContentValues(1)
-        values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpg")
-        val fileUri = contentResolver
-                .insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-                        values)
-        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        if (intent.resolveActivity(packageManager) != null) {
-            mCurrentPhotoPath = fileUri.toString()
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri)
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION
-                    or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
-            startActivityForResult(intent, TAKE_PHOTO_REQUEST)
-        }
-    }
-
     private fun processCapturedPhoto() {
         val cursor = contentResolver.query(Uri.parse(mCurrentPhotoPath),
                 Array(1) { android.provider.MediaStore.Images.ImageColumns.DATA },
@@ -197,35 +106,12 @@ class MainActivity : AppCompatActivity() {
         val baos = ByteArrayOutputStream()
         img?.compress(Bitmap.CompressFormat.JPEG, 50, baos) //bm is the bitmap object
         val b = baos.toByteArray()
-
-
+        val imgView = findViewById(R.id.imageView1) as ImageView
+        imgView.setImageBitmap(img)
          encodedString = Base64.getEncoder().encodeToString(b)
-        AsyncTaskExample().execute(encodedString)
-
-        /*val jsonObj = JsonObject()
-        jsonObj.addProperty("title", "rhythm")
-        jsonObj.addProperty("singer", "meee")
-        jsonObj.addProperty("text", encodedString)
-        //  POST demo
-        APIKindaStuff
-                .service
-                .getVectors(jsonObj)
-                .enqueue(object : Callback<ResponseBody> {
-                    override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                        println("---TTTT :: POST Throwable EXCEPTION:: " + t.message)
-                    }
-
-                    override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                        if (response.isSuccessful) {
-                            val msg = response.body()?.string()
-                            println("---TTTT :: POST msg from server :: " + msg)
-                            Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                })*/
+         AsyncTaskExample().execute(encodedString)
 
         imgvPhoto?.controller = controller
-
     }
 
     private fun validatePermissions() {
@@ -280,6 +166,13 @@ class MainActivity : AppCompatActivity() {
                                 val msg = response.body()?.string()
                                 println("---TTTT :: POST msg from server :: " + msg)
                                 Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
+                                var msgSVM= msg?.subSequence(1,2);
+                                var msgMLP= msg?.subSequence(2,3);
+                                val textViewSVM = findViewById(R.id.textSVM) as TextView
+                                val textViewMLP = findViewById(R.id.textViewMLP) as TextView
+                                textViewSVM.text = msgSVM
+                                textViewMLP.text = msgMLP
+
                             }
                         }
                     })
@@ -290,7 +183,6 @@ class MainActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
-
 
         }
     }

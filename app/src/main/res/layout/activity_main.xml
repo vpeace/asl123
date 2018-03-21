@@ -1,51 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="81dp"
         tools:context="com.example.amandeep.asl.MainActivity"
         >
 
-    <Button
-        android:id="@+id/btnRetry"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="CamerA"
-        android:elevation="6dp"
-        />
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_marginBottom="85dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:text="Click!"
+            tools:layout_editor_absoluteX="226dp"
+            tools:layout_editor_absoluteY="153dp"/>
 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="183dp"
+            android:layout_height="183dp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginBottom="28dp"
+            android:contentDescription="@string/Photo"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="86dp"/>
+
+        <TextView
+            android:id="@+id/textSVM"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewMLP"
+            android:layout_alignBottom="@+id/textViewMLP"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="A"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <TextView
+            android:id="@+id/textViewMLP"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="88dp"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="Z"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="343dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:textColor="@color/Maroon"
+        android:layout_width="164dp"
+        android:layout_height="21dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="SVM"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold"
-        android:textSize="28dp"
-        android:text="Let's Get Started !"
-        android:layout_above="@+id/btnRetry"
-        ></TextView>
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/imgv_photo"
-        android:layout_width="@dimen/photo_width"
-        android:layout_height="@dimen/photo_height"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="24dp"
-        app:failureImage="@drawable/ic_image_error"
-        app:failureImageScaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:placeholderImage="@drawable/ic_image_placeholder"
-        app:placeholderImageScaleType="center" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="156dp"
+            android:layout_height="19dp"
+            android:layout_above="@+id/textViewMLP"
+            android:layout_alignLeft="@+id/textViewMLP"
+            android:layout_alignStart="@+id/textViewMLP"
+            android:layout_marginBottom="23dp"
+            android:text="MLP"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="91dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="24dp" />
+
 
 </RelativeLayout>
