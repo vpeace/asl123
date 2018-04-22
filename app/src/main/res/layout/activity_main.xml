@@ -30,7 +30,7 @@
             android:layout_alignStart="@+id/textView2"
             android:layout_marginBottom="28dp"
             android:contentDescription="@string/Photo"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_image_placeholder"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="86dp"/>
 

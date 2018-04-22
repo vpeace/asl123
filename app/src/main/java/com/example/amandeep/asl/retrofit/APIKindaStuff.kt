@@ -1,5 +1,10 @@
 package com.example.mohammed_2284.simpleapp.retrofit
 
+import android.app.Activity
+import android.content.Context
+import android.provider.Settings.Global.getString
+import com.example.amandeep.asl.Main2Activity
+import com.example.amandeep.asl.MainActivity
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
 import okhttp3.ResponseBody
@@ -27,7 +32,7 @@ class APIKindaStuff {
 
     companion object {
         private val retrofit = Retrofit.Builder()
-                .baseUrl("http://192.168.1.4:5000")
+                .baseUrl("http://"+Main2Activity.ip+":5000")
                 .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
                 .build()
 
